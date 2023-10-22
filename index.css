@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+  background-color: #222222;
+}
+
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 0 2px 1px rgb(255 255 255 / 7%);
+  border-radius: 4px;
+}
+
+.box-item {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.d_moveBox {
+  z-index: 300;
+  transition: none;
+}
+
+.d_transition{
+  transition: all 0.3s;
+}
